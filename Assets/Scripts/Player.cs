@@ -81,7 +81,7 @@ public class Player : MonoBehaviour {
 
 		currentState = STATE.LOGO;
 
-		margin = .55f;
+		margin = 1f;
 		topLev = activeBall.Radius * (1f + margin);
 		botLev = activeBall.Radius * (1f - margin);
 
