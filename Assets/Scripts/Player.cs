@@ -246,7 +246,7 @@ public class Player : MonoBehaviour {
 
 			activeBall.move();
 
-			CheckSnow();
+			//CheckSnow();
 
 			if (activeBall.transform.position.y < (Camera.main.transform.position.y - Camera.main.orthographicSize - camOffset) ||
 			    activeBall.transform.position.y < -10f)
@@ -256,8 +256,6 @@ public class Player : MonoBehaviour {
 		}
 		else if (currentState == STATE.MAIN)
 		{
-			snow.emissionRate = 150f;
-
 			scoreKeeper.drawScore(hits);
 
 			skyBack.gameObject.SetActive(true);
