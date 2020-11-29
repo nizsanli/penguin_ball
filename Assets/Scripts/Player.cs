@@ -146,8 +146,8 @@ public class Player : MonoBehaviour {
 		writer.WriteLine(score.ToString());
 		writer.Flush();
 
-		file.Close();
 		writer.Close();
+		file.Close();
 	}
 
 	public void stateToGame()
